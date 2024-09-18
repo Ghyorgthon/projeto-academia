@@ -30,16 +30,20 @@ a{
     z-index: 1000;
     transition: all 0.3s ease;
 }
+.nav-item{
+    margin: auto;
+}
 
 .nav-item ul{
     text-decoration: none;
     list-style: none;
     display: flex;
     align-items: center;
+    margin: auto;
 }
 
 .nav-item ul li{
-    margin: 0 40px;
+    margin: 0 20px;
     font-size: 18px;
 }
 
