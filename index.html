@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <script src="assets/js/js.js"></script>
 </head>
 <body>
 
@@ -17,18 +18,18 @@
                     <a href="">
                         <h2>Serra<span>Fit</span></h2>
                     </a>
-                    <div class="menu-btn">
-                        <button class="opn-menu"><i class="fa-solid fa-bars"></i></button>
-                    </div>
+
                 </div>
-                <div class="nav-item">
+                <div class="nav-item" id="navMenu">
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#preco">Preços</a></li>
                         <li><a href="#contato">Contato</a></li>
-        
                     </ul>
+                </div>
+                <div class="menu-btn">
+                    <button class="opn-menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
                 </div>
                 <div class="login-btn">
                     <button class="login">
