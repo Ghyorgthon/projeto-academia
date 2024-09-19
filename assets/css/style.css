@@ -1,8 +1,915 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
+  }
+body{
+    background-color: #fff;
+    color: #293033;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    background: #293033;
+    height: 70px;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.nav-item{
+    margin: auto;
+}
+
+.nav-item ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-item ul li{
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.nav-item ul li a{
+    transition: all .2s;
+}
+
+.nav-item ul li a:hover{
+    color: orangered;
+    transition: all .2s;
+}
+
+.nav-title{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-title span{
+
+    color: orangered;
+}
+
+.opn-menu{
+    border: none;
+    background-color: #293033;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 22px;
+    display: none;
+}
+
+
+.login{
+    padding: 8px;
+    margin-right: 50px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #293033;
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.login:hover{
+    transition: all .3s;
+    background-color: orangered;
+    border: 1px solid orangered;
+    outline: none;
+}
+
+/*Section home*/
+
+.container-section{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    padding: 60px 20px 20px 20px;
+    overflow: hidden;
+
+}
+
+#home {
+    background: linear-gradient(to right, rgba(41, 48, 51, 1) 0%, rgba(41, 48, 51, 1) 30%, rgba(41, 48, 51, 0.85) 100%), /* Degradê escurecendo e desaparecendo à esquerda */
+                url(../images/academia-fundo.jpg) no-repeat right ; /* Imagem à direita */
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.text-home{
+    color: #fff;
+    font-size: 62px;
+    flex-wrap: wrap;
+    width: 60%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.text-home p, .text-home h1{
+    margin: 0;
+    padding: 0;
+}
+.text-home p{
+      font-size: 20px;
+
+}
+
+.text-home h1{
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+}
+.text-home span{
+    color: orangered;
+}
+.image-home{
+    margin-top: 80px;
+}
+.image-home img{
+    height: 85vh;
+    filter: grayscale(100%);
+    user-select: none;
+}
+
+.button, .button-v{
+    padding: 20px 35px;
+    width: 150px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button{
+    color: #fff;
+    background-color: orangered;
+    margin-top: 25px;
+    border: 2px solid orangered;
+}
+
+.button-v{
+    background-color: #293033;
+    border: 2px solid orangered;
+    color: #fff;
+}
+
+/*---------Tela Sobre-----------*/
+.section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    overflow-x: hidden;
+}
+
+.header-section{
+
+    margin: 50px auto;
+}
+
+.header-section h1{
+    text-transform: uppercase;
+    font-size: 36px;
+}
+#sobre .header-section p{
+    font-size: 16px;
+
+}
+.card-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.card-info .icon-info{
+    background: #293033;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-info .icon-info i{
+    color: #fff;
+    font-size: 18px;
+}
+
+.card-info h3{
+    color: orangered;
+    text-transform: uppercase;
+}
+
+.card-info p{
+    font-size: 14px;
+}
+.card-info{
+    gap: 15px;
+}
+
+.more-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.more-title{
+    border: 5px double orangered;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+}
+.more-card h1{
+    font-size: 40px;
+    font-weight: 400;
+
+}
+
+.more-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*---------Sessão preços-------------*/
+
+.card-precos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: start;
+}
+.container-preco{
+    margin-top: 20px;
+}
+
+.card-preco, .card-preco-premium{
+    width: 300px;
+    margin: 10px 5px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.card-preco-premium{
+    background: linear-gradient(180deg, orangered 50%, rgb(255, 142, 55) 100%);
+    height: 510px;
+    color: #fff;
+}
+
+.card-preco span, .card-preco-premium span{
+    font-size: 25px;
+}
+.card-preco h2, .card-preco-premium h2{
+    font-size: 50px;
+    margin-bottom: 0;
+    margin: 0;
+    padding-bottom: 0;
+    font-weight: 400;
+}
+.card-preco p, .card-preco-premium p{
+    margin: 0;
+    padding: 0;
+}
+
+.card-preco{
+    background-color: #293033;
+    color: #fff;
+    height: 450px;
+}
+.card-preco span{
+    color: orangered;
+}
+
+.list-preco{
+    list-style: none;
+}
+
+.card-preco .button-v, .card-preco-premium .button-v{
+    background: transparent;
+    width: 70%;
+    height: 55px;
+    text-align: center;
+}
+
+
+/*--------Sessão contato--------*/
+
+.contato-info{
+    background: linear-gradient(180deg, orangered 50%, rgb(255, 117, 11) 100%);
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+
+}
+
+/*------------Rodapé--------------*/
+
+.rodape{
+    margin-top: 25px;
+    background-color: #293033;
+    color: #FFF;
+    position: relative;
+    bottom: 0;
+    height: 100%;
+}
+.top-footer span{
+    color: orangered;
+}
+.top-footer{
+    padding: 25px;
+    font-size: 18px;
+}
+
+.top-footer, .list-footer, .bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.list-footer{
+    justify-content: space-around;
+}
+
+.item-footer{
+    list-style: none;
+
+}
+
+.bottom-footer {
+    font-size: 13px;
+    text-align: center; 
+    justify-content: center;
+    display: flex; 
+    margin: auto;
+}
+
+
+/*Responsividade*/
+
+@media only screen and (max-width:1150px){
+    #home{
+       height: 100vh; 
+    }
+    .section{
+        margin: 0;
+        padding: 0;
+    }
+    .container-section{
+        padding: 0;
+    }
+    .text-home{
+        font-size: 58px;
+        padding: 100px 0 0 25px;
+        justify-content: center;
+
+    }
+    .text-home p{
+        font-size: 18px;
+    }
+    .image-home img{
+        margin-top: 100px;
+
+    } 
+    .button, .button-v{
+        width: 130px;
+        font-size: 10px;
+    }
+
+}
+@media only screen and (max-width:1080px){
+    .text-home{
+        font-size: 52px;
+    }
+    .image-home img{
+        width: 400px;
+        height: 550px;
+        margin-top: 190px;
+    }
+    .more-card{
+        width: 50px;
+    }
+    .card-preco, .card-preco-premium{
+        width: 250px;
+        margin: 5px 5px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .card-preco-premium{
+        height: 480px;
+    }
+    .card-preco{
+        height: 430px;
+    }
+
+}
+
+
+@media only screen and (max-width:950px){
+    #sobre .header-section{
+        width: 100%;
+    }
+
+    .text-card{
+        width: 190px;
+    }
+    .card-preco, .card-preco-premium{
+        width: 240px;
+        margin: 5px 5px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .card-preco h2, .card-preco-premium h2{
+        font-size: 46px;
+    }
+}
+
+@media only screen and (max-width:905px){
+    
+    #home{
+        height: 100vh;
+        margin-top: 20px;
+    }
+    .nav-item{
+        position: fixed;
+        top: 70px;
+        right: 100%;
+        align-items: center;
+        flex-direction: column;
+        background: #293033;
+        height: 100vh;
+        width: 250px;
+        box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+        right: 0;
+        z-index: 10000;
+        transform: translateX(100%);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+    .login{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+    }
+    .menu-btn{
+        position: relative;
+        right: -300px;
+    }
+    .nav-item.responsive{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        transform: translateX(0px);
+        transition: all 0.3s ease;
+    }
+
+    .nav-item.responsive ul{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        transition: transform .3s ease;
+    }
+
+    .nav-item.responsive ul li{
+        transition: all .3s;
+        padding: 20px;
+    }
+
+    .opn-menu{
+        display: none;
+    }
+    .text-home{
+        font-size: 48px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    .text-home p{
+        font-size: 16px;
+    }
+    .container-section{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .image-home{
+        width: 70%;
+    }
+    .image-home img, .image-home{
+        align-items: center;
+        text-align: center;
+    }
+    .image-home img{
+        width: 220px;
+        position: relative;
+        text-align: center;
+        left: 30px;
+        top: 15px;
+        height: 320px;
+
+    }  
+    .button, .button-v{
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 120px;
+    }     
+    .text-card{
+        width: 190px;
+    }
+}
+
+@media only screen and (max-width:875px) {
+    .menu-btn{
+        position: relative;
+        right: -35%;
+    }
+    
+    .card-preco, .card-preco-premium{
+        width: 200px;
+        margin: 5px 5px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .card-preco-premium{
+        height: 450px;
+    }
+    .card-preco{
+        height: 400px;
+    }
+    .card-preco h2,  .card-preco-premium h2{
+        font-size: 36px;
+    }
+    .card-preco p,  .card-preco-premium p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .card-preco span,  .card-preco-premium span{
+        font-size: 18px;
+    }
+    .list-preco{
+    padding: 0px;
+    text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width:775px) {
+    .text-home{
+        font-size: 36px;
+        padding: 0;
+        margin: 90px 0 0 0;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .text-home p{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    .image-home img{
+        position: relative;
+        top: 100px;
+    }
+    .text-card{
+        width: 190px;
+    }
+
+    .more-title{
+        width: 70px;
+        height: 70px;
+    }
+    .more-title h1{
+        font-size: 30px;
+    }
+    .more-card h3{
+        font-size: 16px;
+    }
+    .contato-info{
+        width: 500px;
+        margin: auto;
+    }
+    .list-footer{
+        justify-content: space-between;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .item-footer{
+        margin-top: 30px;
+    }
+    
+}
+
+@media only screen and (max-width:705px){
+    .menu-btn{
+        position: relative;
+        right: -30%;
+    }
+    .card-preco, .card-preco-premium{
+        width: 170px;
+        margin: 5px 5px;
+        padding: 10px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .card-preco-premium{
+        height: 400px;
+    }
+    .card-preco{
+        height: 350px;
+
+    }
+    .card-preco h2,  .card-preco-premium h2{
+        font-size: 32px;
+    }
+    .card-preco h3,  .card-preco-premium h3{
+        font-size: 16px;
+    }
+    .card-preco p,  .card-preco-premium p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .card-preco span,  .card-preco-premium span{
+        font-size: 18px;
+    }
+    .list-preco{
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    }
+    .list-preco .item-preco{
+        margin: 5px 0px;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .text-card{
+        width: 150px;
+    }
+    .card-precos{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-preco, .card-preco-premium{
+        width: 400px;
+        height: 400px;
+        margin: 5px 5px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (max-width:580px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .text-home{
+        font-size: 32px;
+    }
+    .text-home {
+        font-size: 32px;
+        width: 100%; 
+        margin: 0; 
+        padding: 0 10px; 
+        text-align: center; 
+    }
+    .nav-menu{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .opn-menu {
+        font-size: 22px;
+        margin-left: 0;
+    }
+    .image-home img{
+        padding-bottom: 100px;
+        position: relative;
+        left: 10px;
+    }
+    .nav-title{
+        position: relative;
+        left: 20px;
+    }
+    .text-card{
+        width: 150px;
+    }
+
+
+    .more-title{
+        width: 60px;
+        height: 60px;
+    }
+    .more-title h1{
+        font-size: 22px;
+    }
+    .more-card h3{
+        font-size: 14px;
+    }
+    .contato-info{
+        width: 400px;
+        margin: auto;
+    
+    }
+
+    .list-footer, .bottom-footer{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .list-footer{
+        justify-content: space-between;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .item-footer{
+        list-style: none;
+        margin-top: 10px;
+    
+    }
+    .bottom-footer{
+        display: flex;
+        justify-content: center;
+
+    }
+    
+}
+@media only screen and (max-width:500px) {
+    .text-card{
+        width: 130px;
+    }
+    .text-card h3{
+        font-size: 16px;
+    }
+    .text-card p{
+        font-size: 12px;
+    }
+
+    .more-title{
+        width: 50px;
+        height: 50px;
+    }
+    .more-title h1{
+        font-size: 20px;
+    }
+    .more-card h3{
+        font-size: 12px;
+    }
+    .more-card i{
+        font-size: 12px;
+    }
+    #sobre .header-section h1{
+        font-size: 28px;
+    }
+    #sobre .header-section p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:475px) {
+    .contato-info{
+        width: 260px;
+        margin: auto;
+    }
+    
+}
+
+@media only screen and (max-width:440px){
+    .text-card{
+        width: 110px;
+    }
+    .card .icon-info{
+        width: 30px;
+        height: 30px;
+    }
+
+    .card .icon-info i{
+        font-size: 14px;
+    }
+    .text-card h3{
+        font-size: 14px;
+    }
+    .text-card p{
+        font-size: 12px;
+    }
+    .card-precos{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-preco, .card-preco-premium{
+        width: 300px;
+        height: 300px;
+        margin: 5px 5px;
+        padding: 10px;
+        border-radius: 15px;
+    }    
+    .menu-btn{
+        position: relative;
+        right: -25%;
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+    .text-card{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .image-home img{
+        height: 270px;
+        width: 170px;
+    }
+    .menu-btn{
+        position: relative;
+        right: -20%;
+    }
+}
+
+@media only screen and (max-width:359px) {
+    .image-home img{
+        display: none;
+    }   
+    .text-card{
+        width: 90px;
+    }
+    .text-card h3{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:340px) {
+    .contato-info{
+        width: 230px;
+        margin: auto;
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (max-width:320px) {
+    .text-card{
+        width: 70px;
+
+    }
+    .text-card h3{
+        font-size: 10px;
+    }
+    .text-card p{
+        font-size: 9px;
+        font-weight: 500;
+    }
+
+}@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 body{
     background-color: #fff;
     color: #293033;
@@ -29,12 +936,6 @@ a{
     height: 70px;
     top: 0;
     z-index: 1000;
-}
-
-.nav-item{
-    margin: auto;
-    justify-content: center;
-    align-self: center;
 }
 
 .nav-item ul{
@@ -454,70 +1355,16 @@ a{
 }
 
 @media only screen and (max-width:905px){
-   .menu-btn .opn-menu{
-    display: flex;
-   }
-   #navMenu{
-    display: flex;
-   }
-    .nav-item{
-        position: fixed;
-        top: 70px;
-        right: 100%;
-        align-items: center;
-        flex-direction: column;
-        background: #293033;
+    
+    #home{
         height: 100vh;
-        width: 250px;
-        box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-        right: 0;
-        z-index: 10000;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-        display: flex;
-        align-items: center;
-        margin: auto;
+        margin-top: 20px;
     }
-
-    .nav-item ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        width: 100%; 
-        transition: transform 0.3s ease;
-    }
-    .login{
+    .nav-item{
         display: none;
     }
-    .nav-menu{
-        display: flex;
-    }
-    .menu-btn{
-        position: relative;
-        right: -300px;
-    }
-    .nav-item.responsive{
-        transform: translateX(0px);
-    }
-
-    .nav-item.responsive ul{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .nav-item.responsive ul li{
-        transition: all .3s;
-        padding: 20px;
-
-    }
-
     .opn-menu{
-        display: none;
+        display: flex;
     }
     .text-home{
         font-size: 48px;
@@ -567,11 +1414,6 @@ a{
 }
 
 @media only screen and (max-width:875px) {
-    .menu-btn{
-        position: relative;
-        right: -35%;
-    }
-    
     .card-preco, .card-preco-premium{
         width: 200px;
         margin: 5px 5px;
@@ -650,10 +1492,6 @@ a{
 }
 
 @media only screen and (max-width:705px){
-    .menu-btn{
-        position: relative;
-        right: -30%;
-    }
     .card-preco, .card-preco-premium{
         width: 170px;
         margin: 5px 5px;
@@ -855,10 +1693,6 @@ a{
         margin: 5px 5px;
         padding: 10px;
         border-radius: 15px;
-    }    
-    .menu-btn{
-        position: relative;
-        right: -25%;
     }
 
 }
@@ -873,10 +1707,6 @@ a{
     .image-home img{
         height: 270px;
         width: 170px;
-    }
-    .menu-btn{
-        position: relative;
-        right: -20%;
     }
 }
 
@@ -913,4 +1743,841 @@ a{
         font-size: 9px;
         font-weight: 500;
     }
+
+}@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    background-color: #fff;
+    color: #293033;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    background: #293033;
+    height: 70px;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-item ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item ul li{
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.nav-item ul li a{
+    transition: all .2s;
+}
+
+.nav-item ul li a:hover{
+    color: orangered;
+    transition: all .2s;
+}
+
+.nav-title{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-title span{
+
+    color: orangered;
+}
+
+.opn-menu{
+    border: none;
+    background-color: #293033;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 22px;
+    display: none;
+}
+
+
+.login{
+    padding: 8px;
+    margin-right: 50px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #293033;
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.login:hover{
+    transition: all .3s;
+    background-color: orangered;
+    border: 1px solid orangered;
+    outline: none;
+}
+
+/*Section home*/
+
+.container-section{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    padding: 60px 20px 20px 20px;
+    overflow: hidden;
+
+}
+
+#home {
+    background: linear-gradient(to right, rgba(41, 48, 51, 1) 0%, rgba(41, 48, 51, 1) 30%, rgba(41, 48, 51, 0.85) 100%), /* Degradê escurecendo e desaparecendo à esquerda */
+                url(../images/academia-fundo.jpg) no-repeat right ; /* Imagem à direita */
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.text-home{
+    color: #fff;
+    font-size: 62px;
+    flex-wrap: wrap;
+    width: 60%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.text-home p, .text-home h1{
+    margin: 0;
+    padding: 0;
+}
+.text-home p{
+      font-size: 20px;
+
+}
+
+.text-home h1{
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+}
+.text-home span{
+    color: orangered;
+}
+.image-home{
+    margin-top: 80px;
+}
+.image-home img{
+    height: 85vh;
+    filter: grayscale(100%);
+    user-select: none;
+}
+
+.button, .button-v{
+    padding: 20px 35px;
+    width: 150px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button{
+    color: #fff;
+    background-color: orangered;
+    margin-top: 25px;
+    border: 2px solid orangered;
+}
+
+.button-v{
+    background-color: #293033;
+    border: 2px solid orangered;
+    color: #fff;
+}
+
+/*---------Tela Sobre-----------*/
+.section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    overflow-x: hidden;
+}
+
+.header-section{
+
+    margin: 50px auto;
+}
+
+.header-section h1{
+    text-transform: uppercase;
+    font-size: 36px;
+}
+#sobre .header-section p{
+    font-size: 16px;
+
+}
+.card-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.card-info .icon-info{
+    background: #293033;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-info .icon-info i{
+    color: #fff;
+    font-size: 18px;
+}
+
+.card-info h3{
+    color: orangered;
+    text-transform: uppercase;
+}
+
+.card-info p{
+    font-size: 14px;
+}
+.card-info{
+    gap: 15px;
+}
+
+.more-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.more-title{
+    border: 5px double orangered;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+}
+.more-card h1{
+    font-size: 40px;
+    font-weight: 400;
+
+}
+
+.more-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*---------Sessão preços-------------*/
+
+.card-precos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: start;
+}
+
+.card-preco, .card-preco-premium{
+    width: 300px;
+    margin: 10px 5px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.card-preco-premium{
+    background: linear-gradient(180deg, orangered 50%, rgb(255, 142, 55) 100%);
+    height: 510px;
+    color: #fff;
+}
+
+.card-preco span, .card-preco-premium span{
+    font-size: 25px;
+}
+.card-preco h2, .card-preco-premium h2{
+    font-size: 50px;
+    margin-bottom: 0;
+    margin: 0;
+    padding-bottom: 0;
+    font-weight: 400;
+}
+.card-preco p, .card-preco-premium p{
+    margin: 0;
+    padding: 0;
+}
+
+.card-preco{
+    background-color: #293033;
+    color: #fff;
+    height: 450px;
+}
+.card-preco span{
+    color: orangered;
+}
+
+.list-preco{
+    list-style: none;
+}
+
+.card-preco .button-v, .card-preco-premium .button-v{
+    background: transparent;
+    width: 70%;
+    height: 55px;
+    text-align: center;
+}
+
+
+/*--------Sessão contato--------*/
+
+.contato-info{
+    background: linear-gradient(180deg, orangered 50%, rgb(255, 117, 11) 100%);
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+
+}
+
+/*------------Rodapé--------------*/
+
+.rodape{
+    margin-top: 25px;
+    background-color: #293033;
+    color: #FFF;
+    position: relative;
+    bottom: 0;
+    height: 100%;
+}
+.top-footer span{
+    color: orangered;
+}
+.top-footer{
+    padding: 25px;
+    font-size: 18px;
+}
+
+.top-footer, .list-footer, .bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.list-footer{
+    justify-content: space-around;
+}
+
+.item-footer{
+    list-style: none;
+
+}
+
+.bottom-footer {
+    font-size: 13px;
+    text-align: center; 
+    justify-content: center;
+    display: flex; 
+    margin: auto;
+}
+
+
+/*Responsividade*/
+
+@media only screen and (max-width:1150px){
+    #home{
+       height: 100vh; 
+    }
+    .section{
+        margin: 0;
+        padding: 0;
+    }
+    .container-section{
+        padding: 0;
+    }
+    .text-home{
+        font-size: 58px;
+        padding: 100px 0 0 25px;
+        justify-content: center;
+
+    }
+    .text-home p{
+        font-size: 18px;
+    }
+    .image-home img{
+        margin-top: 100px;
+
+    } 
+    .button, .button-v{
+        width: 130px;
+        font-size: 10px;
+    }
+
+}
+@media only screen and (max-width:1080px){
+    .text-home{
+        font-size: 52px;
+    }
+    .image-home img{
+        width: 400px;
+        height: 550px;
+        margin-top: 190px;
+    }
+    .more-card{
+        width: 50px;
+    }
+    .card-preco, .card-preco-premium{
+        width: 250px;
+        margin: 5px 5px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .card-preco-premium{
+        height: 480px;
+    }
+    .card-preco{
+        height: 430px;
+    }
+
+}
+
+
+@media only screen and (max-width:950px){
+    #sobre .header-section{
+        width: 100%;
+    }
+
+    .text-card{
+        width: 190px;
+    }
+    .card-preco, .card-preco-premium{
+        width: 240px;
+        margin: 5px 5px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .card-preco h2, .card-preco-premium h2{
+        font-size: 46px;
+    }
+}
+
+@media only screen and (max-width:905px){
+    
+    #home{
+        height: 100vh;
+        margin-top: 20px;
+    }
+    .nav-item{
+        display: none;
+    }
+    .opn-menu{
+        display: flex;
+    }
+    .text-home{
+        font-size: 48px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    .text-home p{
+        font-size: 16px;
+    }
+    .container-section{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .image-home{
+        width: 70%;
+    }
+    .image-home img, .image-home{
+        align-items: center;
+        text-align: center;
+    }
+    .image-home img{
+        width: 220px;
+        position: relative;
+        text-align: center;
+        left: 30px;
+        top: 15px;
+        height: 320px;
+
+    }  
+    .button, .button-v{
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 120px;
+    }     
+    .text-card{
+        width: 190px;
+    }
+}
+
+@media only screen and (max-width:875px) {
+    .card-preco, .card-preco-premium{
+        width: 200px;
+        margin: 5px 5px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .card-preco-premium{
+        height: 450px;
+    }
+    .card-preco{
+        height: 400px;
+    }
+    .card-preco h2,  .card-preco-premium h2{
+        font-size: 36px;
+    }
+    .card-preco p,  .card-preco-premium p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .card-preco span,  .card-preco-premium span{
+        font-size: 18px;
+    }
+    .list-preco{
+    padding: 0px;
+    text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width:775px) {
+    .text-home{
+        font-size: 36px;
+        padding: 0;
+        margin: 90px 0 0 0;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .text-home p{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    .image-home img{
+        position: relative;
+        top: 100px;
+    }
+    .text-card{
+        width: 190px;
+    }
+
+    .more-title{
+        width: 70px;
+        height: 70px;
+    }
+    .more-title h1{
+        font-size: 30px;
+    }
+    .more-card h3{
+        font-size: 16px;
+    }
+    .contato-info{
+        width: 500px;
+        margin: auto;
+    }
+    .list-footer{
+        justify-content: space-between;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .item-footer{
+        margin-top: 30px;
+    }
+    
+}
+
+@media only screen and (max-width:705px){
+    .card-preco, .card-preco-premium{
+        width: 170px;
+        margin: 5px 5px;
+        padding: 10px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .card-preco-premium{
+        height: 400px;
+    }
+    .card-preco{
+        height: 350px;
+
+    }
+    .card-preco h2,  .card-preco-premium h2{
+        font-size: 32px;
+    }
+    .card-preco h3,  .card-preco-premium h3{
+        font-size: 16px;
+    }
+    .card-preco p,  .card-preco-premium p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .card-preco span,  .card-preco-premium span{
+        font-size: 18px;
+    }
+    .list-preco{
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    }
+    .list-preco .item-preco{
+        margin: 5px 0px;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .text-card{
+        width: 150px;
+    }
+    .card-precos{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-preco, .card-preco-premium{
+        width: 400px;
+        height: 400px;
+        margin: 5px 5px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (max-width:580px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .text-home{
+        font-size: 32px;
+    }
+    .text-home {
+        font-size: 32px;
+        width: 100%; 
+        margin: 0; 
+        padding: 0 10px; 
+        text-align: center; 
+    }
+    .nav-menu{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .opn-menu {
+        font-size: 22px;
+        margin-left: 0;
+    }
+    .image-home img{
+        padding-bottom: 100px;
+        position: relative;
+        left: 10px;
+    }
+    .nav-title{
+        position: relative;
+        left: 20px;
+    }
+    .text-card{
+        width: 150px;
+    }
+
+
+    .more-title{
+        width: 60px;
+        height: 60px;
+    }
+    .more-title h1{
+        font-size: 22px;
+    }
+    .more-card h3{
+        font-size: 14px;
+    }
+    .contato-info{
+        width: 400px;
+        margin: auto;
+    
+    }
+
+    .list-footer, .bottom-footer{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .list-footer{
+        justify-content: space-between;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .item-footer{
+        list-style: none;
+        margin-top: 10px;
+    
+    }
+    .bottom-footer{
+        display: flex;
+        justify-content: center;
+
+    }
+    
+}
+@media only screen and (max-width:500px) {
+    .text-card{
+        width: 130px;
+    }
+    .text-card h3{
+        font-size: 16px;
+    }
+    .text-card p{
+        font-size: 12px;
+    }
+
+    .more-title{
+        width: 50px;
+        height: 50px;
+    }
+    .more-title h1{
+        font-size: 20px;
+    }
+    .more-card h3{
+        font-size: 12px;
+    }
+    .more-card i{
+        font-size: 12px;
+    }
+    #sobre .header-section h1{
+        font-size: 28px;
+    }
+    #sobre .header-section p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:475px) {
+    .contato-info{
+        width: 260px;
+        margin: auto;
+    }
+    
+}
+
+@media only screen and (max-width:440px){
+    .text-card{
+        width: 110px;
+    }
+    .card .icon-info{
+        width: 30px;
+        height: 30px;
+    }
+
+    .card .icon-info i{
+        font-size: 14px;
+    }
+    .text-card h3{
+        font-size: 14px;
+    }
+    .text-card p{
+        font-size: 12px;
+    }
+    .card-precos{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-preco, .card-preco-premium{
+        width: 300px;
+        height: 300px;
+        margin: 5px 5px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+    .text-card{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .image-home img{
+        height: 270px;
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width:359px) {
+    .image-home img{
+        display: none;
+    }   
+    .text-card{
+        width: 90px;
+    }
+    .text-card h3{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:340px) {
+    .contato-info{
+        width: 230px;
+        margin: auto;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .text-card{
+        width: 70px;
+
+    }
+    .text-card h3{
+        font-size: 10px;
+    }
+    .text-card p{
+        font-size: 9px;
+        font-weight: 500;
+    }
+
 }
